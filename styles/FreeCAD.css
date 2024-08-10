@@ -4,6 +4,8 @@
 
 			Written with love by Byte
 				https://ibyte.men
+				
+	https://github.com/rye-bbread/website-themes
 
 	============================================
 
@@ -99,13 +101,12 @@ span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, head
 	border: none !important;
 }
 
-.fcinfobox, .wikitable, .ct, table, table tbody, table tr, table td, table th, .uls-menu, .uls-search, .cdx-search-input--has-end-button, .cdx-button, .cdx-text-input__input, .mw-highlight, pre, code, .mw-code
+.fcinfobox, .wikitable, .ct, table, table tbody, table tr, table td, table th, .uls-menu, .uls-search, .cdx-search-input--has-end-button, .cdx-button, .cdx-text-input__input, .mw-highlight, pre, code, .mw-code, .vector-body blockquote
 {
 	border-color: #3f4149 !important; 
 } 
 
-.client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) 
-{
+.client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) {
 	border-right-color: transparent !important;
 }
 
@@ -151,9 +152,16 @@ figure ::after, figcaption
 	padding-left : 1em;
 }
 
-.mw-ui-button 
+.mw-parser-output a.external 
 {
-	
+	/* fill: #7cc9ec !important; */
+	background-image: url(https://ibyte.men/static/assets/misc/outbound%20link.svg);
 }
 
+#itsfree
+{
+	background: hsla(342, 100%, 89%, .05) !important;
+	color: #c6cad1 !important;
+	border-color: #ff066180 !important;
+}
 
