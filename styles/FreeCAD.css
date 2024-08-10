@@ -19,7 +19,7 @@
 */
 
 
-.mw-body-content, .mw-body h1, .vector-tab-noicon a, h2 span, .mw-page-title-main, .wikitable, .vector-pinnable-header-label, footer li, .uls-lcd-region-title, .cdx-button:enabled, pre, code, .mw-code, .mw-headline
+.mw-body-content, .mw-body h1, .vector-tab-noicon a, h2 span, .mw-page-title-main, .wikitable, .vector-pinnable-header-label, footer li, .uls-lcd-region-title, .cdx-button:enabled, pre, code, .mw-code, .mw-headline, .cdx-text-input__input:enabled, .ime-list-title, .ime-lang-title, .languagesettings-menu h1, .settings-menu-items div, #languagesettings-settings-panel h3, #languagesettings-settings-panel h4, .mw-ui-button, #languagesettings-settings-panel, .vector-search-box-input, .oo-ui-textInputWidget .oo-ui-inputWidget-input, .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button .oo-ui-labelElement-label
 {
 	color: #c6cad1 !important;
 }
@@ -34,7 +34,7 @@ a, mw-list-item a, .vector-pinnable-header-toggle-button, .vector-pinnable-heade
 	color: #7cc9ec !important;
 }
 
-html, body, a, mw-list-item a, .mw-body-content, .mw-body h1, .vector-tab-noicon a, h2, .mw-page-title-main, .wikitable, .vector-pinnable-header-label
+html, body, a, mw-list-item a, .mw-body-content, .mw-body h1, .vector-tab-noicon a, h2, .mw-page-title-main, .wikitable, .vector-pinnable-header-label, .imeselector
 {
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 	font-family: "Montserrat", sans-serif !important;
@@ -63,14 +63,19 @@ body
 	background-color: #131314;
 }
 
-.mw-page-container, .vector-toc, .wikitable, .uls-menu, .uls-menu #search, .uls-lcd, #uls-settings-block, .vector-feature-page-tools-disabled .vector-main-menu, pre, code, .mw-code, .mw-highlight
+.mw-page-container, .vector-toc, .wikitable, .uls-menu, .uls-menu #search, .uls-lcd, #uls-settings-block, .vector-feature-page-tools-disabled .vector-main-menu, pre, code, .mw-code, .mw-highlight, .imeselector-menu, #languagesettings-settings-panel, .uls-input-settings .uls-input-settings-inputmethods-list, .uls-language-settings-close-block, .oo-ui-textInputWidget .oo-ui-inputWidget-input, .mw-search-profile-tabs
 {
 	background-color: #161718 !important;
 }
 
-.mw-pt-languages, .mw-pt-languages-label, .mw-pt-languages-list, .docnav, .vector-search-box-input, .ctOdd, .NavHead, .catlinks, .uls-filtersuggestion, .cdx-search-input--has-end-button, .cdx-text-input__input, .cdx-button:not(.cdx-button--type-quiet):enabled, .mousemodel, .mousemodel th, .mousemodel td
+.mw-pt-languages, .mw-pt-languages-label, .mw-pt-languages-list, .docnav, .vector-search-box-input, .ctOdd, .NavHead, .catlinks, .uls-filtersuggestion, .cdx-search-input--has-end-button, .cdx-text-input__input, .cdx-button:not(.cdx-button--type-quiet):enabled, .mousemodel, .mousemodel th, .mousemodel td, .uls-ime-menu-settings-item, .languagesettings-menu .menu-section.active, .imeselector:hover
 {
 	background-color: #1b1d1e !important;
+}
+
+.languagesettings-menu .menu-section:hover , .mw-ui-button:not(:disabled):hover, .uls-language-block > ul > li:hover
+{
+	background-color: #282d2e !important;
 }
 
 figure, span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, header span)
@@ -78,14 +83,14 @@ figure, span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container sp
 	background-color: transparent !important;
 }
 
-.vector-toc::after 
+#languagesettings-panels .mw-ui-pressed, .mw-ui-button.mw-ui-progressive:not(:disabled), .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button, .mw-ui-button.mw-ui-progressive:disabled
 {
-	background: none !important;
+	background-color: #7cc9ec80 !important;
 }
 
-span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, header span)
+.vector-toc::after
 {
-	border-color: #292e2f !important;
+	background: none !important;
 }
 
 
@@ -96,26 +101,48 @@ span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, head
 */
 
 
-.mw-pt-languages, .docnav, .mw-ui-button, .vector-search-box-input, .catlinks, figure, figure img, .mousemodel td
+:focus
+{
+	outline-color: #7cc9ec80 !important;
+}
+
+span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, header span)
+{
+	border-color: #292e2f !important;
+}
+
+.mw-pt-languages, .docnav, .mw-ui-button, .vector-search-box-input, .catlinks, figure, figure img, .mousemodel td, .languagesettings-menu .menu-section.active, .menu-section, .mw-search-profile-tabs, .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button
 {
 	border: none !important;
 }
 
-.fcinfobox, .wikitable, .ct, table, table tbody, table tr, table td, table th, .uls-menu, .uls-search, .cdx-search-input--has-end-button, .cdx-button, .cdx-text-input__input, .mw-highlight, pre, code, .mw-code, .vector-body blockquote
+.fcinfobox, .wikitable, .ct, table, table tbody, table tr, table td, table th, .uls-menu, .uls-search, .cdx-search-input--has-end-button, .cdx-button, .cdx-text-input__input, .mw-highlight, pre, code, .mw-code, .vector-body .blockquote, .ime-list-title, .imeselector-menu, .ime-lang-title, .uls-ime-menu-settings-item, .language-settings-buttons, .oo-ui-textInputWidget .oo-ui-inputWidget-input, footer
 {
 	border-color: #3f4149 !important; 
 } 
 
-.client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) {
+.vector-page-titlebar 
+{
+	box-shadow: 0 1px #3f4149 !important;
+}
+
+.client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) 
+{
 	border-right-color: transparent !important;
 }
 
-.mw-ui-button 
+.cdx-text-input__input:enabled:focus 
+{
+	box-shadow: inset 0 0 0 1px #7cc9ec80 !important;
+}
+
+.mw-ui-button, .imeselector:hover
 {
 	box-shadow: none !important;
 }
 
-.NavFrame {
+.NavFrame 
+{
 	border-color: transparent;
 }
 
@@ -127,14 +154,25 @@ span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, head
 */
 
 
-#bodyContent ul li {
+#bodyContent ul li 
+{
 	list-style-image: none;
 	list-style: disc;
 }
 
-.mw-ui-icon::before, .mw-logo-wordmark, .searchButton, .uls-search-label, .mw-file-description
+.mw-search-profile-tabs li 
+{
+	list-style: none !important;
+}
+
+.mw-ui-icon::before, .mw-logo-wordmark, .searchButton, .uls-search-label, .mw-file-description, #languagesettings-close, .oo-ui-iconElement-icon, .oo-ui-indicatorElement-indicator
 {
 	filter: invert(1);
+}
+
+.ime-disable-link 
+{
+	filter: invert(0);
 }
 
 .mw-body img 
@@ -157,10 +195,43 @@ figure ::after, figcaption
 	background-image: url(https://ibyte.men/static/assets/misc/outbound%20link.svg);
 }
 
+.language-settings-dialog  {
+	box-shadow: none !important;
+}
+
 #itsfree
 {
 	background: hsla(342, 100%, 89%, .05) !important;
 	color: #c6cad1 !important;
 	border-color: #ff066180 !important;
+}
+
+.imeselector, .languagesettings-menu .menu-section.input-settings-block, .languagesettings-menu .menu-section.display-settings-block
+{
+	background: url(https://ibyte.men/static/assets/misc/input.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	box-shadow: none;
+	background-size: 15px;
+	background-position-x: 10px;
+	padding-left: 30px;
+}
+
+.languagesettings-menu .menu-section.input-settings-block, .languagesettings-menu .menu-section.display-settings-block 
+{
+	padding: 5px 0 5px 42px;
+	background: left 15px top 6px url(https://ibyte.men/static/assets/misc/input.svg) no-repeat;
+	background-size: 20px auto;
+}
+
+.languagesettings-menu .menu-section.display-settings-block 
+{
+	background-image: url(https://ibyte.men/static/assets/misc/display.svg) !important;
+}
+
+.mw-helplink 
+{
+	background-image: url(https://ibyte.men/static/assets/misc/help.svg) !important;
+	padding-left: 30px !important;
 }
 
