@@ -4,7 +4,7 @@
 
 			Written with love by Byte
 				https://ibyte.men
-				
+
 	https://github.com/rye-bbread/website-themes
 
 	============================================
@@ -65,10 +65,10 @@ body
 
 .mw-page-container, .vector-toc, .wikitable, .uls-menu, .uls-menu #search, .uls-lcd, #uls-settings-block, .vector-feature-page-tools-disabled .vector-main-menu, pre, code, .mw-code, .mw-highlight
 {
-	background-color: #161718;
+	background-color: #161718 !important;
 }
 
-.mw-pt-languages, .mw-pt-languages-label, .mw-pt-languages-list, .docnav, .vector-search-box-input, .ctOdd, .NavHead, .catlinks, .uls-filtersuggestion, .cdx-search-input--has-end-button, .cdx-text-input__input, .cdx-button:not(.cdx-button--type-quiet):enabled
+.mw-pt-languages, .mw-pt-languages-label, .mw-pt-languages-list, .docnav, .vector-search-box-input, .ctOdd, .NavHead, .catlinks, .uls-filtersuggestion, .cdx-search-input--has-end-button, .cdx-text-input__input, .cdx-button:not(.cdx-button--type-quiet):enabled, .mousemodel, .mousemodel th, .mousemodel td
 {
 	background-color: #1b1d1e !important;
 }
@@ -96,7 +96,7 @@ span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, head
 */
 
 
-.mw-pt-languages, .docnav, .mw-ui-button, .vector-search-box-input, .catlinks, figure, figure img
+.mw-pt-languages, .docnav, .mw-ui-button, .vector-search-box-input, .catlinks, figure, figure img, .mousemodel td
 {
 	border: none !important;
 }
@@ -132,7 +132,7 @@ span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, head
 	list-style: disc;
 }
 
-.mw-ui-icon::before, .mw-logo-wordmark, .searchButton, .uls-search-label
+.mw-ui-icon::before, .mw-logo-wordmark, .searchButton, .uls-search-label, .mw-file-description
 {
 	filter: invert(1);
 }
@@ -154,7 +154,6 @@ figure ::after, figcaption
 
 .mw-parser-output a.external 
 {
-	/* fill: #7cc9ec !important; */
 	background-image: url(https://ibyte.men/static/assets/misc/outbound%20link.svg);
 }
 
