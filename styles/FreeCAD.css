@@ -1,0 +1,159 @@
+/*
+
+	============================================
+
+			Written with love by Byte
+				https://ibyte.men
+
+	============================================
+
+*/
+
+
+/* 
+	-------------------------------------------
+					Text Styles
+	-------------------------------------------
+*/
+
+
+.mw-body-content, .mw-body h1, .vector-tab-noicon a, h2 span, .mw-page-title-main, .wikitable, .vector-pinnable-header-label, footer li, .uls-lcd-region-title, .cdx-button:enabled, pre, code, .mw-code, .mw-headline
+{
+	color: #c6cad1 !important;
+}
+
+.vector-tab-noicon a:visited 
+{ 
+	color: #9fa9b9 !important;
+}
+
+a, mw-list-item a, .vector-pinnable-header-toggle-button, .vector-pinnable-header-unpin-button, span:not(h2 span, .mw-page-title-main, .mw-headline)
+{
+	color: #7cc9ec !important;
+}
+
+html, body, a, mw-list-item a, .mw-body-content, .mw-body h1, .vector-tab-noicon a, h2, .mw-page-title-main, .wikitable, .vector-pinnable-header-label
+{
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+	font-family: "Montserrat", sans-serif !important;
+}
+
+pre, code, tt, kbd, samp, .mw-code {
+	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+	font-family: "Fira Code", monospace !important;
+}
+
+
+/* 
+	-------------------------------------------
+					Background Styles
+	-------------------------------------------
+*/
+
+
+.uls-trigger, .mw-ui-button
+{
+	background: none;
+}
+
+body 
+{
+	background-color: #131314;
+}
+
+.mw-page-container, .vector-toc, .wikitable, .uls-menu, .uls-menu #search, .uls-lcd, #uls-settings-block, .vector-feature-page-tools-disabled .vector-main-menu, pre, code, .mw-code, .mw-highlight
+{
+	background-color: #161718;
+}
+
+.mw-pt-languages, .mw-pt-languages-label, .mw-pt-languages-list, .docnav, .vector-search-box-input, .ctOdd, .NavHead, .catlinks, .uls-filtersuggestion, .cdx-search-input--has-end-button, .cdx-text-input__input, .cdx-button:not(.cdx-button--type-quiet):enabled
+{
+	background-color: #1b1d1e !important;
+}
+
+figure, span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, header span)
+{
+	background-color: transparent !important;
+}
+
+.vector-toc::after 
+{
+	background: none !important;
+}
+
+span:not(h2 span, .mw-page-title-main, .vector-page-toolbar-container span, header span)
+{
+	border-color: #292e2f !important;
+}
+
+
+/* 
+	-------------------------------------------
+					Border Styles
+	-------------------------------------------
+*/
+
+
+.mw-pt-languages, .docnav, .mw-ui-button, .vector-search-box-input, .catlinks, figure, figure img
+{
+	border: none !important;
+}
+
+.fcinfobox, .wikitable, .ct, table, table tbody, table tr, table td, table th, .uls-menu, .uls-search, .cdx-search-input--has-end-button, .cdx-button, .cdx-text-input__input, .mw-highlight, pre, code, .mw-code
+{
+	border-color: #3f4149 !important; 
+} 
+
+.client-js .vector-search-box-vue .vector-typeahead-search .cdx-text-input__input:not(:hover):not(:focus) 
+{
+	border-right-color: transparent !important;
+}
+
+.mw-ui-button 
+{
+	box-shadow: none !important;
+}
+
+.NavFrame {
+	border-color: transparent;
+}
+
+
+/* 
+	-------------------------------------------
+					 Misc Styles
+	-------------------------------------------
+*/
+
+
+#bodyContent ul li {
+	list-style-image: none;
+	list-style: disc;
+}
+
+.mw-ui-icon::before, .mw-logo-wordmark, .searchButton, .uls-search-label
+{
+	filter: invert(1);
+}
+
+.mw-body img 
+{
+	filter: brightness(0.80);
+}
+
+figure ::after, figcaption
+{
+	display: none !important;
+}
+
+.uls-search-input-wrapper input
+{
+	padding-left : 1em;
+}
+
+.mw-ui-button 
+{
+	
+}
+
+
